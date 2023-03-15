@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Font */
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(/font/BebasNeue-Regular.woff) format('woff');
+}
+
+/* Style utama */
+body {
+    scroll-behavior: smooth;
+    font: 18px/36px 'BebasNeue', 'Arial Narrow', arial, sans-serif;
+    background-color: #98d6ea;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    margin: 0 0 5px ;
+}
+
+.navbar{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    z-index: 99999;
+}
+
+
+.hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    border-radius: 10px;
+    -webkit-transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    background-color: #98d6ea;
+}
+
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-item{
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+#active{
+    color: #98d6ea;
+    border-bottom: 3px solid #98d6ea;
+}
+
+.nav-link:visited,
+.nav-link:link {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    border-bottom: 3px solid #98d6ea;
+    transition: all 0.3s ease-out;
+}
+
+.nav-logo{
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: rgba(33, 37, 41, 0.8);
+}
+
+
+/*h1, .nav-logo {
+    font-size: 80px;
+    margin: 50px 0;
+    text-decoration: none;
+    text-align: center;
+    color: rgba(33, 37, 41, 0.8);
+    text-shadow: 1px 1px 3px #5c6b73;
+}*/
+
+.container {
+    width: 80%;
+    background-color: #fff;
+    margin: 100px auto 0;
+    padding: 10px;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+
+
+/* Footer */
+.footer {
+    font-size: 1.6rem;
+    color: rgb(245, 245, 245);
+    font: 'BebasNeue', 'Arial Narrow', arial, sans-serif;
+    margin: 0 30px;
+    text-align: center;
+    padding: 100px;
+    text-shadow: 1px 1px 5px rgb(155, 154, 154, 0.6);
+}
+
+.footer .copy {
+    border-top: 4px solid #f7f7ff;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.footer .author {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+
+.footer .author:hover{
+    border-bottom: 3px solid #fff;
+    transition: all .2s ease-out;
+}
+
+/*.footer .author:visited {
+    color: #424b54;
+}*/
+
+.fa-heart {
+    color: #ee1c38;
+    padding: 20px 0;
+    margin: 5px;
+}
+
+.fa-instagram {
+    padding: 15px;
+    margin-right: -25px;
+}
+
+.tahun {
+    color: #f7f7ff;
+}
